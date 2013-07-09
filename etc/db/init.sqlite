@@ -1,0 +1,7 @@
+
+create table dictionary (
+    id integer not null primary key autoincrement,
+    word text not null,
+    impression text,
+    created_at unsigned int
+);
