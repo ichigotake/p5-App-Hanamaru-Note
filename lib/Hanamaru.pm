@@ -32,7 +32,7 @@ path '/' => sub {
 
 =head1 NAME
 
-Hanamaru - Web Application
+Hanamaru - はなまる手帳
 
 =head1 SYNOPSIS
 
@@ -40,7 +40,9 @@ Hanamaru - Web Application
 
 =head1 DESCRIPTION
 
-Hanamaru is web application based Nephia.
+Hanamaru is post to "Hanamaru word" web application.
+
+"Hanamaru" mean "flower circle", its offen used praise children.
 
 =head1 AUTHOR
 
@@ -49,6 +51,8 @@ ichigotake
 =head1 SEE ALSO
 
 Nephia
+
+Google Image Search: "はなまる"
 
 =head1 LICENSE
 

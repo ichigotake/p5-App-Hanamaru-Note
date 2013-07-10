@@ -1,6 +1,6 @@
 # NAME
 
-Hanamaru - Web Application
+Hanamaru - はなまる手帳
 
 # SYNOPSIS
 
@@ -8,7 +8,9 @@ Hanamaru - Web Application
 
 # DESCRIPTION
 
-Hanamaru is web application based Nephia.
+Hanamaru is post to "Hanamaru word" web application.
+
+"Hanamaru" mean "flower circle", its offen used praise children.
 
 # AUTHOR
 
@@ -17,6 +19,8 @@ ichigotake
 # SEE ALSO
 
 Nephia
+
+Google Image Search: "はなまる"
 
 # LICENSE
 
