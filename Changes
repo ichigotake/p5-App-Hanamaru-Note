@@ -1,6 +1,7 @@
 {{$NEXT}}
+        - Minillaの生成したBuild.PLを追加
         - Nephiaをアップデート
-	 - s/単語リスト/はなまるワード/
+        - s/単語リスト/はなまるワード/
 
 0.01 2013-07-09T18:08:57Z
         - original version
