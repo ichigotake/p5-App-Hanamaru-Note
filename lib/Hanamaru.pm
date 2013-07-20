@@ -4,7 +4,7 @@ use warnings;
 use Nephia plugins => [qw/Teng/];
 use Time::Piece;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 path '/' => sub {
     my $req = shift;
