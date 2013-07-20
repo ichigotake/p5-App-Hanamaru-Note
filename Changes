@@ -1,4 +1,5 @@
 {{$NEXT}}
+        - minil testを通す
         - Minillaの生成したBuild.PLを追加
         - Nephiaをアップデート
         - s/単語リスト/はなまるワード/
