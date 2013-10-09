@@ -1,30 +1,39 @@
 package Hanamaru;
 use strict;
 use warnings;
-use Nephia plugins => [qw/Teng/];
+use utf8;
 use Time::Piece;
+use Nephia plugins => [
+    'View::MicroTemplate' => {
+        include_path => [qw/ view /],
+    },
+    'Dispatch',
+    'Teng',
+];
 
-our $VERSION = 0.02;
+our $VERSION = '0.03';
 
-path '/' => sub {
-    my $req = shift;
+app {
+    get '/' => sub {
 
-    if ( my $word = $req->param('word') ) {
-        my $impression = $req->param('impression') || '';
-        my $now = time;
-        teng->insert('dictionary', {
-            word => $word,
-            impression => $impression,
-            created_at => $now,
-        });
-        return res { redirect('/') };
-    }
+        [200, [], render('index.html', {
+            title      => 'はなまる手帳',
+            teng       => teng,
+            parse_time => sub { return Time::Piece->new($_[0])->strftime($_[1]) },
+        })];
+    };
 
-    return {
-        template => 'index.html',
-        title    => config->{appname},
-        teng     => teng,
-        parse_time => sub { return Time::Piece->new($_[0])->strftime($_[1]) },
+    post '/' => sub {
+       if ( my $word = param('word') ) {
+            my $impression = param('impression') || '';
+            my $now = time;
+            teng->insert('dictionary', {
+                word => $word,
+                impression => $impression,
+                created_at => $now,
+            });
+        }
+        [302, [ 'Location' => '/' ], undef]
     };
 };
 

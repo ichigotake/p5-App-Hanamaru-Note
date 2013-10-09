@@ -2,7 +2,7 @@
 use utf8;
 +{
     appname => 'はなまる手帳',
-    "Plugin::Teng" => {
+    'DBI' => {
         connect_info => [
             'dbi:SQLite:dbname=hanamaru.db', '', '',
             {
