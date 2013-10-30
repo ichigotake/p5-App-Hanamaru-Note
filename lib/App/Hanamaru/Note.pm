@@ -16,7 +16,7 @@ our $VERSION = '0.04';
 app {
     get '/' => sub {
 
-        [200, [], render('index.html', {
+        [200, ["Content-Type" => "text/html; charset=utf8"], render('index.html', {
             title      => 'はなまる手帳',
             teng       => teng,
             parse_time => sub { return Time::Piece->new($_[0])->strftime($_[1]) },
