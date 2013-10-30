@@ -1,4 +1,4 @@
-package Hanamaru;
+package App::Hanamaru::Note;
 use strict;
 use warnings;
 use utf8;
@@ -11,7 +11,7 @@ use Nephia plugins => [
     'Teng',
 ];
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 app {
     get '/' => sub {
@@ -41,7 +41,7 @@ app {
 
 =head1 NAME
 
-Hanamaru - はなまる手帳
+App::Hanamaru::Note - はなまる手帳
 
 =head1 SYNOPSIS
 
@@ -49,7 +49,7 @@ Hanamaru - はなまる手帳
 
 =head1 DESCRIPTION
 
-Hanamaru is post to "Hanamaru word" web application.
+Hanamaru::Note is post to "Hanamaru word" web application.
 
 "Hanamaru" mean "flower circle", its offen used praise children.
 

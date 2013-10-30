@@ -1,6 +1,6 @@
 # NAME
 
-Hanamaru - はなまる手帳
+App::Hanamaru::Note - はなまる手帳
 
 # SYNOPSIS
 
@@ -8,7 +8,7 @@ Hanamaru - はなまる手帳
 
 # DESCRIPTION
 
-Hanamaru is post to "Hanamaru word" web application.
+Hanamaru::Note is post to "Hanamaru word" web application.
 
 "Hanamaru" mean "flower circle", its offen used praise children.
 

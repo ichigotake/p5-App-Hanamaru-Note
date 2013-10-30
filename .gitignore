@@ -20,3 +20,5 @@ local
 MYMETA.*
 inc
 *.db
+/App-Hanamaru-*
+/Build.bat

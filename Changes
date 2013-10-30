@@ -1,4 +1,5 @@
 {{$NEXT}}
+        - rename: App-Hanamaru => App-Hanamaru-Note
 
 0.02 2013-07-20T02:55:16Z
         - minil testを通す

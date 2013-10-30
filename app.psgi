@@ -17,7 +17,7 @@ BEGIN {
     unshift @INC, "$root/../../lib";
 }
 use lib ("$FindBin::Bin/lib", "$FindBin::Bin/extlib/lib/perl5");
-use Hanamaru;
+use App::Hanamaru::Note;
 my $config = require( Config::Micro->file( dir => File::Spec->catdir($root, 'etc','conf') ) );
 
 builder {
@@ -25,5 +25,5 @@ builder {
         root => File::Spec->catfile($root),
         path => qr{^/static/};
 
-    '/' => Hanamaru->run( %$config );
+    '/' => App::Hanamaru::Note->run( %$config );
 }
