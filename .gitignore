@@ -7,6 +7,7 @@ MANIFEST
 Makefile.old
 nytprof.out
 MANIFEST.bak
+META.json
 *.sw[po]
 /Hanamaru-*
 /.build
