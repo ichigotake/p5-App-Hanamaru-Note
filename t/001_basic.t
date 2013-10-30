@@ -2,6 +2,6 @@ use strict;
 use warnings;
 use Test::More;
 BEGIN {
-    use_ok( 'Hanamaru' );
+    use_ok( 'App::Hanamaru::Note' );
 }
 done_testing;
